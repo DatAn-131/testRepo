@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+    width: 35px;
+    margin-left: 10px;
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d7aeea;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+
+
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: brown;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+ul li {
+    list-style: none;
+    padding: 12px 20px 20px 30px;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+    background-color: #edeef0;
+    /* Màu nền cho item */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 70px;
+    width: 400px;
+
+
+    /* Khoảng cách giữa các mục */
+}
+
+
+
+ul li.checked {
+    color: #153677;
+    text-decoration: line-through;
+}
+
+ul li span.remove {
+    position: absolute;
+    right: 10px;
+    /* Khoảng cách từ bên phải */
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #f44336;
+    /* Màu đỏ cho nút xóa */
+}
+
+ul li span.remove:hover {
+    background-color: #e53935;
+    /* Khi hover, màu đỏ sẽ đậm hơn */
+}
+
+ul li span.edit {
+    position: absolute;
+    right: 60px;
+    /* Khoảng cách từ nút xóa */
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ff9800;
+    /* Màu cam cho nút chỉnh sửa */
+}
+
+ul li span.edit:hover {
+    background-color: #fb8c00;
+    /* Màu cam đậm khi hover */
+}
+
+ul li span {
+    cursor: pointer;
+}
